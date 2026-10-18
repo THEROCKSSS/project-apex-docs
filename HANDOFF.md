@@ -1,5 +1,15 @@
 # Project Apex public research guide
 
+Latest prose checkpoint: the optional infection prototype passes 26 controlled
+protocol/mode checks. A separate source-built MIT community API experiment fixes
+pending send-buffer ownership and passes ten transport checks, including late
+old-writer completion after reconnect. The original library is unchanged; native
+adoption and actual player effects remain open. The public guide links these
+findings to the source transformation, tests and reproducible input lock.
+API-library work adds zero game matching bytes. The graph and twelve C panels
+remain unchanged. Local public-site checks: 12 passed. Rendered deployment
+readback is required at this new publication commit. No CSS or JavaScript changed.
+
 Updated 18 October 2026. This six-file allowlisted site documents research,
 measured source matching and contribution guidance. NON-LIVE DATA. Ledger and
 private graph agree at 182 functions / 7,685 of 55,306,761 executable bytes
