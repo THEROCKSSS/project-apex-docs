@@ -1,28 +1,27 @@
 # Project Apex public research guide
 
-Updated 2026-10-18 by Codex for Owen. This repository contains only the sanitized
-website: no shipped game binaries/assets, private hosts, credentials or raw logs.
+Updated 18 October 2026. This repository contains the sanitized website only:
+research explanations, measured progress and actual reconstructed C samples.
+Game binaries/assets, credentials, private hosts and raw logs stay excluded.
 
-Measured rebuild stays173functions /6,349executablebytes /55,306,761 (0.011479609%).
-Zero complete binaries rebuilt. Four expanded panels contain actual reconstruction
-C, and the enlarged treemap describes only the matching subset.
+The fresh compiled checkpoint contains **174 functions / 6,504 executable bytes**
+of 55,306,761: **0.011759864%**, with zero complete binaries rebuilt. The enlarged
+treemap represents the matching subset; the full-scope bar keeps its real scale.
 
-This update explains a new server-authorized HTTP profile lookup. The API and
-one-request Python bridge enforce server isolation, exclude private applications,
-read currently approved clans, distinguish missing profiles from zeroXP and
-reject invalid/revoked credentials, malformed responses and late results.
-The actual app plus bridge was tested via ASGI; no new listener was opened.
-Full Python suite980passed/oneexistingwarning. The running service still lacks
-the new endpoint; it is not deployed or wired into native server admission.
-The website explicitly separates those limits from working lab observations.
+The latest addition is the complete 155-byte TeamManager.GetXP caller. Its typed
+SSE2 source reproduces the observed float conversions and passes 30,438 finite
+calls through explicitly owned test helpers. Four CALLs, eight data references
+and the complete native unwind extent are pinned. The native math helper and
+constants receive zero dependency credit; the actual XP curve remains external.
+The fifth expandable panel contains the actual source used by this proof.
 
-Public publication must retain the six-file allowlist, credential/private-host
-scan, exact canonical assets and measured graph. HTTPS browser checks cover
-desktop/tablet/mobile, four exact sourcepanels expanded at each viewport,
-canonical173-row snapshot, keyboard/filter/empty/reload, reducedmotion,
-TrustedTypes and private-path404. This update's deployment readback is pending
-at commit time; earlier173-row browser evidence belongs to the previous commit.
+Independent compilation and runtime review passed. The source suite passed
+1,054 Python and 68 JavaScript tests, with one existing Python warning. Public
+publication retains the six-file allowlist and checks credentials/private hosts,
+exact canonical assets and measured graph. This commit's HTTPS/browser readback
+occurs after publication; prior 173-row evidence belongs to the previous build.
 
-The full goal remains ACTIVE: native profile hydration and lifecycle ownership,
-unassisted flight/landing, complete launcher provisioning/accounts/public hosting,
-content loading and100%binary reconstruction remain open.
+The server-authorized profile HTTP lookup remains source-only and undeployed;
+it is not wired into native admission. The full goal stays active: complete
+reconstruction, live profile continuity, unassisted flight/landing, universal
+game setup, independent accounts/networks and custom content still need work.
