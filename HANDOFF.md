@@ -1,35 +1,37 @@
 # Project Apex public research guide
 
-Updated 18 October 2026. This repository contains only the sanitized website:
-research explanations, measured progress and actual reconstructed C samples.
-Game binaries/assets, credentials, private hosts and raw logs stay excluded.
+Updated 18 October 2026. Six allowlisted website files contain research,
+measured progress, seven actual reconstructed C samples and developer guidance.
+Game binaries/assets, credentials, private hosts and raw captures stay excluded.
 
-The fresh compiled checkpoint contains **177 functions / 6,781 executable bytes**
-of55,306,761: **0.012260707%**, with zero complete binaries rebuilt. The enlarged
-treemap represents the matching subset; the full-scope bar keeps its real scale.
+Source matching remains177 functions /6781 of55306761 executable bytes:
+0.012260707%, zero whole binaries. The underlying proof snapshot is unchanged;
+the enlarged treemap represents only the matching subset. No new matching-source
+credit is awarded by the library research in this checkpoint.
 
-The latest connected bundle adds277bytes: level-up126B, progress133B and Clamp18B.
-Guarded fixtures pass69,678 /69,654 /24,000calls. The two callers use pinned
-MSVC19.29; Clamp uses19.42. BoolAL, rawXMM float transport, unsigned late-XP
-loads, separately rounded reciprocal/product and NaN comparison behavior are
-explicitly checked. All174previous proof rows remain exactly equal.
+Complete static comparison attributes the3782B math dependency to installed
+SDK powf, plus365B special helper and4877ROdata bytes. All94code relocations,
+complete tables and unwind records agree under one consistent inferred layout.
+Original SDK version and implementation source remain unproven.
 
-A fresh-source composed DLL links these with the reconstructed155B XP caller:
-17,436calls, four complete original/object/linked/loaded bodies432B, zero extra
-credit. Eight fixture helpers and15globals have owned bindings; floating state
-is restored. Metadata/class and the3,782B math routine remain test spies. The
-actual XP curve and live native profile hydration are not reconstructed by this.
-Seven expandable panels show actual proof C; contribution notes link the ABI,
-compiler, relocation and runtime evidence workflow to project source paths.
+A new owned DLL freshly compiles GetXP155B/Clamp18B and links attributed SDK
+members. A bounded child passes5088calls, including201costs from three retained
+native events; independent fresh compilation and24fault rejections agree.
+Code/data/imports are bound, floating state restored and module absence checked.
+Only SSE2 dispatch0 and nearest-even masked floating point are exercised.
+Initialization remains a spy; CRT error paths terminate rather than implement
+their semantics. Historical events lack complete module/agent/FP provenance.
+This adds zero credit and establishes no new live gameplay or profile behavior.
 
-Independent source/receipt/runtime/composition reviews passed. The source suite
-passed1,142Python/oneexistingwarning and68JavaScript tests; affected source/page
-checks passed afterward. Public publication retains the six-file allowlist and
-checks credentials/private hosts, exact canonical assets and measured graph.
-This commit's HTTPS/browser readback follows publication; previous174-row
-browser evidence belongs to the earlier checkpoint.
+The earlier four-body progression fixture remains independently reproducible:
+17436calls/432B, with initialization/math spies. The new SDK-backed curve test
+is separate. Public findings and codebase-map entries explain both boundaries.
 
-The server-authorized profile lookup remains source-only and undeployed. The
-full goal stays active: complete reconstruction, live profile continuity,
-unassisted flight/landing, universal game setup, accounts/networks and custom
-content still need work.
+Full source checks:1193Python/oneexistingwarning,68Node, protocol roundtrips and
+27truncation rejections,45Python/31JavaScript syntax checks. Final HTTPS/browser
+readback follows this publication; older browser evidence belongs to older commits.
+Public privacy checks retain the six-file allowlist and exact canonical assets.
+
+The full goal remains ACTIVE. Native server profile admission/reconnect,
+unassisted helicopter flight/landing, universal setup, public networks/accounts,
+server gameplay modes and custom content remain separate unfinished work.
