@@ -1,35 +1,27 @@
 # Project Apex public research guide
 
-Updated 18 October 2026. Six allowlisted website files contain research,
-measured progress, eight actual reconstructed C samples and developer guidance.
-Game binaries/assets, credentials, private hosts and raw captures stay excluded.
+Updated18October2026. Six allowlisted website files contain research findings,
+179 measured matching functions, nine actual reconstructed C source samples and
+contribution guidance. NON-LIVE DATA. Matching is7161of55306761executable bytes
+(0.012947784%), with zero complete shipped binaries rebuilt.
 
-Source matching now covers 178 functions / 7,146 of 55,306,761 executable bytes:
-0.012920663%, zero whole binaries. The enlarged treemap shows only the matching
-subset; the full-scope meter retains the executable denominator. NON-LIVE DATA.
+The latest leaf reconstructs15bytes of raw uint32-to-float32 transport, setting
+bit22. The special caller's compatible uint32 declaration preserves its365B.
+The optional authored-special XP fixture connects four authored bodies/553B,
+SDKpowf3782B/4872RO and an owned5Bname. It excludes prebuiltpow_special.obj and
+checks its alias without duplicate credit.5088curve calls compare all201retained
+costs;2398364direct special/default calls+6572calibrations pass. Complete code,
+readonlydata and IAT are checked before/after calls;FP restores and DLL absence
+is verified. Error handling remains a terminating marker; initialization spies
+and prebuilt math remain explicit dependencies. Integration adds zero credit.
 
-The latest addition is the complete 365-byte powf_special caller, rebuilt from
-typed C with an explicit size profile. All three relocations and the native
-unwind extent are bound. Its fixture checks 474,184 target configurations and
-6,572 bridge calibrations per pass; fresh-source validation repeats them.
-Independent fresh compilation agrees. A separate 45-vector native-ABI oracle
-passes 180 target calls and 68 calibrations, including full64-bit result
-transport, return selection and unchanged trace lanes. Floating state restores
-and module absence is observed after release. Earlier177 receipt files remain
-unchanged. Helpers, literal data and external handlers earn zero new credit.
+Source-only review found and fixed empty-domain acceptance; two regressions
+failed before fixing.37targetedtests/1303Python/oneexistingwarning/68Node,
+protocol27rejects and47Python/31JSsyntax pass. Fresh full-ledger verification
+completed2026-10-18T16:12:17.541770Z. Actual deployed browser/readback follows.
+Game binaries/assets, credentials, private hosts and raw captures are excluded.
 
-SDK attribution of the 3,782-byte main powf routine and 4,877 readonly data bytes
-is separate from authored source matching. The existing SDK-backed XP-curve
-runner still uses the prebuilt special helper; composing the new C into that
-runner remains next work. The earlier 5,088-call curve check, 201 retained costs
-and 17,436-call four-body fixture keep their original scope and limitations.
-No new original-game execution, profile hydration or flight acceptance is added.
-
-Local source checks:1,244 Python/one existing warning,68 Node, protocol
-roundtrips/27 truncation rejections,46 Python/31 JavaScript syntax checks.
-Staged review and exact-head CI/HTTPS/browser readback follow publication.
-The six-file public allowlist and exact canonical assets remain mandatory.
-
-The full goal remains ACTIVE. Native server profile admission/reconnect,
-unassisted helicopter flight/landing, universal setup, public networks/accounts,
-server gameplay modes and custom content remain separate unfinished work.
+The expanded full goal remains ACTIVE: universal EXE setup/game provisioning,
+independent network invitations/accounts/public ingress, native admission and
+reconnect, full server functions, manual helicopter acceptance and custom content
+remain separate unfinished work. Retain the complete denominator and limitations.
