@@ -1,21 +1,26 @@
 # Project Apex public research guide
 
-Prepared 2026-10-18 by Codex for Owen. Repository: THEROCKSSS/project-apex-docs.
+Updated2026-10-18 by Codex for Owen. Repository:THEROCKSSS/project-apex-docs.
 
-This repository contains the sanitized public website only. It does not contain
-game binaries, assets, private configuration, raw captures or private research
-history. GitHub Pages publishes the root of main. The application source remains
-in the separate research repository.
+This repository contains the sanitized website only. Application/research source
+remains in a separate private repository. No game binaries/assets/raw captures,
+account identifiers, private network configuration or credentials are published.
+GitHub Pages publishes the root of main.
 
-The dated graph has 164 matching functions / 5,012 native executable bytes out of
-55,306,761 (0.009062183%). Zero complete shipped binaries have been rebuilt.
-The enlarged function treemap represents only that matching subset.
+Current compiled proof snapshot:167 exact functions /5,042 executable bytes out
+of55,306,761 (0.009116426%). Zero complete shipped binaries rebuilt. The enlarged
+treemap represents only the matched subset. The complete private decompiler graph
+has an older timestamp; this public subset uses the fresh compiled proof count.
 
-Before updating: regenerate the allowlisted graph from verified source receipts,
-check every public claim and source binding, scan the exact publication files,
-exercise desktop/tablet/mobile rendering and graph interactions, and inspect the
-deployed URLs. Preserve missing or unverified features as explicit limitations.
+New root-authored progression leaves provide30bytes after fresh MSVC compilation,
+linked-export ownership/ABI checks and13,254finite calls per function. The guide
+also records26 real XP events/18,000XP, native menu rank restoration and a real
+native TCP API snapshot/round-start event. Native server profile hydration,
+unassisted flight/landing, game-mode hooks, full publisher-service isolation,
+universal game setup, network accounts and content loading remain incomplete.
 
-Initial checks: projection9regressions passed; independent all164sourcebinding,
-partition math, privacy, asset/route and CSS checks passed. Browser/deployment
-verification follows publication; it is not implied by these structural checks.
+Before publication: validate every source/object/DLL receipt, regenerate the
+allowlisted graph, compare exact source bindings, scan all six public files,
+then verify the deployed HTTPS assets and desktop/tablet/mobile interactions.
+The prior live site passed those browser checks; updated deployment/browser
+verification follows this commit and must be reported separately.

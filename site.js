@@ -58,4 +58,4 @@ fetch('rebuild.json',{cache:'no-cache'}).then(response=>{if(!response.ok)throw E
  $('metrics').replaceChildren(...metrics.map(([value,label])=>{const box=document.createElement('div');box.append(element('strong',value),element('span',label));return box;}));$('metrics').hidden=false;
  $('graph-status').textContent='Proof verified '+data.proofVerifiedUtc+' · Pinned binary SHA-256 '+data.binarySha256;
  renderRows();draw();
-}).catch(()=>{$('graph-status').textContent='The published graph could not load. Verified checkpoint: 164 functions / 5,012 exact executable bytes out of 55,306,761 (0.009062%). Zero complete binary rebuilds. Refresh to retry.';});
+}).catch(()=>{$('graph-status').textContent='The published graph could not load, so matching figures are unavailable here. No complete shipped binary rebuild has been verified. Refresh to retry.';});
