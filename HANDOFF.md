@@ -1,36 +1,34 @@
 # Project Apex public research guide
 
 Updated 18 October 2026. Six allowlisted website files contain research,
-measured progress, seven actual reconstructed C samples and developer guidance.
+measured progress, eight actual reconstructed C samples and developer guidance.
 Game binaries/assets, credentials, private hosts and raw captures stay excluded.
 
-Source matching remains177 functions /6781 of55306761 executable bytes:
-0.012260707%, zero whole binaries. The underlying proof snapshot is unchanged;
-the enlarged treemap represents only the matching subset. No new matching-source
-credit is awarded by the library research in this checkpoint.
+Source matching now covers 178 functions / 7,146 of 55,306,761 executable bytes:
+0.012920663%, zero whole binaries. The enlarged treemap shows only the matching
+subset; the full-scope meter retains the executable denominator. NON-LIVE DATA.
 
-Complete static comparison attributes the3782B math dependency to installed
-SDK powf, plus365B special helper and4877ROdata bytes. All94code relocations,
-complete tables and unwind records agree under one consistent inferred layout.
-Original SDK version and implementation source remain unproven.
+The latest addition is the complete 365-byte powf_special caller, rebuilt from
+typed C with an explicit size profile. All three relocations and the native
+unwind extent are bound. Its fixture checks 474,184 target configurations and
+6,572 bridge calibrations per pass; fresh-source validation repeats them.
+Independent fresh compilation agrees. A separate 45-vector native-ABI oracle
+passes 180 target calls and 68 calibrations, including full64-bit result
+transport, return selection and unchanged trace lanes. Floating state restores
+and module absence is observed after release. Earlier177 receipt files remain
+unchanged. Helpers, literal data and external handlers earn zero new credit.
 
-A new owned DLL freshly compiles GetXP155B/Clamp18B and links attributed SDK
-members. A bounded child passes5088calls, including201costs from three retained
-native events; independent fresh compilation and24fault rejections agree.
-Code/data/imports are bound, floating state restored and module absence checked.
-Only SSE2 dispatch0 and nearest-even masked floating point are exercised.
-Initialization remains a spy; CRT error paths terminate rather than implement
-their semantics. Historical events lack complete module/agent/FP provenance.
-This adds zero credit and establishes no new live gameplay or profile behavior.
+SDK attribution of the 3,782-byte main powf routine and 4,877 readonly data bytes
+is separate from authored source matching. The existing SDK-backed XP-curve
+runner still uses the prebuilt special helper; composing the new C into that
+runner remains next work. The earlier 5,088-call curve check, 201 retained costs
+and 17,436-call four-body fixture keep their original scope and limitations.
+No new original-game execution, profile hydration or flight acceptance is added.
 
-The earlier four-body progression fixture remains independently reproducible:
-17436calls/432B, with initialization/math spies. The new SDK-backed curve test
-is separate. Public findings and codebase-map entries explain both boundaries.
-
-Full source checks:1193Python/oneexistingwarning,68Node, protocol roundtrips and
-27truncation rejections,45Python/31JavaScript syntax checks. Final HTTPS/browser
-readback follows this publication; older browser evidence belongs to older commits.
-Public privacy checks retain the six-file allowlist and exact canonical assets.
+Local source checks:1,244 Python/one existing warning,68 Node, protocol
+roundtrips/27 truncation rejections,46 Python/31 JavaScript syntax checks.
+Staged review and exact-head CI/HTTPS/browser readback follow publication.
+The six-file public allowlist and exact canonical assets remain mandatory.
 
 The full goal remains ACTIVE. Native server profile admission/reconnect,
 unassisted helicopter flight/landing, universal setup, public networks/accounts,
