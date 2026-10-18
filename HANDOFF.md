@@ -1,30 +1,33 @@
 # Project Apex public research guide
 
-Updated2026-10-18 by Codex for Owen. Repository:THEROCKSSS/project-apex-docs.
+Updated 2026-10-18 by Codex for Owen. THEROCKSSS/project-apex-docs contains the
+sanitized website only. No shipped binaries/assets/raw captures, private account
+identifiers, network configuration or credentials belong here. Pages serves main.
 
-This repository contains the sanitized website only. Application/research source
-remains in a separate private repository. No game binaries/assets/raw captures,
-account identifiers, private network configuration or credentials are published.
-GitHub Pages publishes the root of main.
+Current compiled snapshot:172 exact functions /5,227 executable bytes out of
+55,306,761 (0.009450924%). Zero complete shipped binaries rebuilt. The expanded
+treemap represents only the matched subset; the original executable denominator
+remains visible. The full private decompiler graph has an older timestamp.
 
-Current compiled proof snapshot:167 exact functions /5,042 executable bytes out
-of55,306,761 (0.009116426%). Zero complete shipped binaries rebuilt. The enlarged
-treemap represents only the matched subset. The complete private decompiler graph
-has an older timestamp; this public subset uses the fresh compiled proof count.
+Five new Pint bodies add185bytes. All six declared counter methods total191bytes,
+including the older Value getter once. Four arithmetic/conversion proofs exercise
+93,060 finite cases; the155-byte formatter caller exercises77,568. Seven test
+helper COMDATs and nine globals are bound explicitly; all helper/data credit is0.
+This proves complete method bodies, not a standalone managed class or boxing,
+formatting, allocation and runtime metadata reconstruction.
 
-New root-authored progression leaves provide30bytes after fresh MSVC compilation,
-linked-export ownership/ABI checks and13,254finite calls per function. The guide
-also records26 real XP events/18,000XP, native menu rank restoration and a real
-native TCP API snapshot/round-start event. Native server profile hydration,
-unassisted flight/landing, game-mode hooks, full publisher-service isolation,
-universal game setup, network accounts and content loading remain incomplete.
+The website now embeds three actual root-authored reconstruction source files.
+Build_public_site refreshes them from fixed allowlisted paths; exact-source tests
+protect against stale or unrelated snippets. Public findings distinguish genuine
+native XP/menu/API observations from fixtures and incomplete gameplay features.
 
-Before publication: validate every source/object/DLL receipt, regenerate the
-allowlisted graph, compare exact source bindings, scan all six public files,
-then verify the deployed HTTPS assets and desktop/tablet/mobile interactions.
-The prior live site passed those browser checks; updated deployment/browser
-verification follows this commit and must be reported separately.
+Before publication: fresh complete receipt validation, source hash checks,
+allowlisted snapshot generation and six-file credential/private-host scan.
+After deployment: actual HTTPS browser checks at1440/768/390, exact source panels
+and graph snapshot, expanded-code overflow, keyboard/filter/empty/deep-link reload,
+Trusted Types, private-path404 and zero page errors. This update's deployment and
+browser readback are pending at commit time; prior167-row checks are historical.
 
-Follow-up: corrected the findings heading after adding the fourth article. The
-previous deployment passed actual Chrome desktop/tablet/mobile, exact167row
-snapshot, keyboard/filter/reload, Trusted Types and private-path404 checks.
+Native server-profile hydration, unassisted flight/landing, lifecycle/game-mode
+hooks, universal game provisioning, public network accounts, content loading and
+the complete100%binary rebuild remain open. The broader goal remains ACTIVE.
