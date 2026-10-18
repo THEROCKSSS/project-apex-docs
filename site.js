@@ -53,9 +53,16 @@ addEventListener('resize',draw);
 fetch('rebuild.json',{cache:'no-cache'}).then(response=>{if(!response.ok)throw Error('snapshot unavailable');return response.json();}).then(value=>{
  if(value.data!=='NON-LIVE DATA'||value.wholeBinaryRebuilt!==false||!Array.isArray(value.functions)||value.functions.length!==value.functionCount||
   value.functions.reduce((s,f)=>s+f.bytes,0)!==value.matchingFunctionBytes||value.matchingFunctionBytes>value.executableBytes)throw Error('snapshot inconsistent');
+ const provenance=value.verification;
+ if(provenance&&(provenance.mode!=='retained-checkpoint-plus-new-proofs'||
+  !Number.isInteger(provenance.retainedFunctions)||!Number.isInteger(provenance.newFunctions)||
+  provenance.retainedFunctions<0||provenance.newFunctions<0||
+  provenance.retainedFunctions+provenance.newFunctions!==value.functionCount))throw Error('checkpoint inconsistent');
  data=value;
  const metrics=[[(100*data.matchingFunctionBytes/data.executableBytes).toFixed(6)+'%','EXACT EXECUTABLE MATCH'],[number(data.matchingFunctionBytes)+' / '+number(data.executableBytes),'MATCHED / SCOPE BYTES'],[number(data.functionCount),'VERIFIED MATCHING FUNCTIONS'],['0','COMPLETE SHIPPED BINARIES REBUILT']];
  $('metrics').replaceChildren(...metrics.map(([value,label])=>{const box=document.createElement('div');box.append(element('strong',value),element('span',label));return box;}));$('metrics').hidden=false;
- $('graph-status').textContent='Proof verified '+data.proofVerifiedUtc+' · Pinned binary SHA-256 '+data.binarySha256;
+ $('graph-status').textContent='Checkpoint '+data.proofVerifiedUtc+
+  (provenance?' · '+provenance.newFunctions+' newly exercised functions; '+provenance.retainedFunctions+
+   ' retained from '+provenance.retainedVerificationUtc:'')+' · Pinned binary SHA-256 '+data.binarySha256;
  renderRows();draw();
 }).catch(()=>{$('graph-status').textContent='The published graph could not load, so matching figures are unavailable here. No complete shipped binary rebuild has been verified. Refresh to retry.';});

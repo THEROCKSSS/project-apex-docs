@@ -1,56 +1,38 @@
 # Project Apex public research guide
 
-Latest prose checkpoint: the optional infection prototype passes 26 controlled
-protocol/mode checks. A separate source-built MIT community API experiment fixes
-pending send-buffer ownership and passes ten transport checks, including late
-old-writer completion after reconnect. The original library is unchanged; native
-adoption and actual player effects remain open. The public guide links these
-findings to the source transformation, tests and reproducible input lock.
-API-library work adds zero game matching bytes. The graph and twelve C panels
-remain unchanged. Local public-site checks: 12 passed. Rendered deployment
-readback is required at this new publication commit. No CSS or JavaScript changed.
+18 October 2026 compiler checkpoint: 191 complete matching functions / 7,915
+bytes of the pinned 55,306,761 executable-byte scope (0.014311089%). Nine new
+functions add 230 bytes: three vehicle/helicopter leaves, three player/network
+functions, two weapon calculations and one admission flag getter. Their owned
+source-built fixtures exercise 487,284 caller cases per verification pass.
+Extra bridge calibrations and the vehicle alignment matrix are counted separately.
+Zero complete shipped binaries have been rebuilt. NON-LIVE DATA.
 
-Updated 18 October 2026. This six-file allowlisted site documents research,
-measured source matching and contribution guidance. NON-LIVE DATA. Ledger and
-private graph agree at 182 functions / 7,685 of 55,306,761 executable bytes
-(0.013895227%). This percentage covers only pinned GameAssembly.dll executable
-sections. Zero complete shipped binaries are rebuilt. Twelve expandable C panels
-contain actual reconstructed sources; the full private graph is not published.
+The graph retains the original 182 receipts and their 19:00:19Z verification date;
+the nine additions were freshly exercised at 23:04:26Z. The status line identifies
+this mixed checkpoint. The scope is only the pinned GameAssembly.dll executable
+sections. Other binaries, metadata, data, assets and full file layout remain open.
+Sixteen expandable panels contain the actual reconstructed C used by the proofs.
+No original game, assets, captures, private configuration or account data is hosted.
 
-The new 31-byte status caller matches its complete body, CALL, tail jump and
-unwind. Its standalone owned register fixture passes 1,179,648 caller cases plus
-589,824 calibrations. Eleven deliberate corruptions reject before loading. The
-wide spies are physical-register instrumentation, not portable C composition or
-recovered assembly-helper formal types. Full code/data/metadata binding, fresh
-compilation, checked release and module absence pass.
+Matching proofs bind complete compiler functions, independently qualified native
+extents, ABI, declared calls/data and owned linked/loaded fixtures. Helpers and
+padding receive zero credit. Metadata/class initialization and the spotted
+predicate remain external. Weapon cases save/restore a controlled floating state;
+quiet NaN result class is checked without claiming payload/sign equivalence.
+The inferred admission flag name is not a recovered managed field name.
 
-A separate, type-compatible composition links the existing 186-byte mask and
-31-byte status callers with owned SSE helpers. Actual processor tests pass
-1,048,576 predicate cases, 524,288 calibrations and 923,648 status-caller calls.
-Saved floating control restores before return to Python; every probe checks it.
-Fifteen deliberately corrupt variants reject before loading, including alias
-displacement. The existing 217 bytes receive zero additional matching credit.
-All exception masks stay set; traps, broad CRT/IEEE semantics, all rounding/DAZ/
-FTZ combinations, the larger error caller and XP integration remain open.
+Independent mechanical Standards/Spec reviews passed after fixing adjacent-entry
+validation, fresh object-header comparison, NaN replay normalization and test-helper
+C type declarations. Focused source checks passed 272 tests; site JavaScript
+syntax and 72 Node tests passed. Four actual-JS graph regressions cover invalid
+provenance hiding, valid mixed data, legacy data and fetch failure. Validation now
+precedes metric DOM changes, so rejected counts do not remain visible. Final publication CI and rendered readback are recorded in the
+private project handoff after deployment, tied to exact source/site commits.
 
-Independent Spec/Standards reviews pass for both fixtures. Full local checks:
-1,359 Python tests with one existing warning, 68 Node tests, protocol roundtrips /
-27 truncation rejections and syntax. Another 58 site/ledger checks pass. The full
-private graph replayed all 182 proofs; no new decompiler export ran. Actual-JS
-VM checks pass 182 deep links/728 tabs/171 regions. Private browser/canvas
-rendering is unverified. Public deployed-browser/CI readback follows commit.
-
-Cached installed scope covers 177 files / 2,685,474,556 bytes and 18 PE binaries /
-107,066,312 executable virtual bytes. Inventory hashes are not reconstruction.
-Other binaries, metadata, assets, full layout, a complete dedicated-server
-inventory and original build inputs remain in the full objective. Binaries,
-assets, raw captures, private hosts and credentials are excluded from this site.
-
-The complete goal remains ACTIVE. Universal game provisioning, independent
-accounts/public hosting, native saved-profile admission, manual flight/landing
-and custom content remain unfinished. Gameplay observations are historical;
-this checkpoint did not retest or change the game/server/services.
-
-The final screenshot check caught the new status finding in the contributor
-section. It now belongs to the research grid; the browser verifier asserts
-that exact placement. Deployed readback is required at the correction commit.
+The existing guide also describes independent networks, separate XP per server,
+clan moderation/approval, setup support and uninstall goals. Historical lab joins,
+XP awards and helicopter observations remain historical. This matching checkpoint
+made no native game, laptop or community-service changes. Universal provisioning,
+public accounts/networks, complete profile admission, manual flight/landing and
+custom content are not complete. The full goal remains ACTIVE.
