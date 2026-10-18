@@ -8,7 +8,7 @@
 <main><section id="overview" class="hero"><p class="eyebrow">FIELD NOTES / INDEPENDENT COMMUNITY INFRASTRUCTURE</p><h1>A place to host.<br/>A game to understand.</h1><p class="lede">Project Apex explores independent BattleBit servers, community-owned progression and a reproducible reconstruction of the installed game. Working lab results and future plans are kept separate.</p><div class="hero-actions"><a class="button" href="#rebuild">Explore the rebuild</a><a href="#connect">How joining will work →</a></div><p class="status">EARLY LAB PROJECT · No public launcher download yet · No complete game rebuild</p></section>
 <section id="connect"><p class="eyebrow">01 / FOR PLAYERS</p><h2>From an invitation to a server.</h2><p>The intended player journey is simple. A Windows setup EXE, React launcher, desktop shortcut, repair, uninstall and support export have been exercised in the lab. Automatic game provisioning and independent network invitations are still being developed; the steps below describe the complete target experience.</p><ol class="journey"><li><b>Install Project Apex</b><span>Run the setup EXE and use the desktop shortcut. Setup checks explain missing prerequisites.</span></li><li><b>Choose a community</b><span>Import the owner’s network invitation. Review who operates it before signing in.</span></li><li><b>Prepare the game</b><span>A compatible build adapter uses an isolated copy of your own installation and records reversible changes.</span></li><li><b>Browse and play</b><span>Choose a real server in the native browser. Join authorization belongs to that host; discovery is optional.</span></li></ol><div class="note"><b>Current lab evidence</b><p>One full-size Wakistan server, a native browser-to-world join, two basic opposing bots, 26 native earned-XP events totaling 18,000 XP, and a visible native leaderboard entry have been verified. The native menu restored that saved XP as rank 2. Pilot-seat entry and full engine power were observed; an earlier bounded assisted takeoff is recorded separately. Unassisted flight and landing, full master-service egress isolation, and hydration of the server’s in-round native profile remain open checks.</p></div><h3>If setup fails</h3><p>The launcher’s first slice records bounded setup and failure codes and offers a sanitized support report. Preview the report before sharing it. Raw game logs can contain private data and are not part of the public research site.</p><h3>Removing it</h3><p>The installer is designed to remove the application and its shortcuts through Windows Settings. The game installation remains separate. Saved application data is preserved unless you deliberately remove it.</p></section>
 <section id="networks"><p class="eyebrow">02 / FOR HOSTS</p><h2>Your network. Your rules.</h2><div class="columns"><article><h3>Host a community</h3><p>Each independent operator should own their accounts, listings, moderation and clan approvals. Players choose which operator they trust. Separate XP on every server is a fixed requirement.</p><span class="badge">PARTIAL / LOCAL SERVICES</span></article><article><h3>Share a direct invitation</h3><p>A network invitation identifies the host and compatible service. It must not include an administrator credential. Direct admission should keep working when an optional directory is unavailable.</p><span class="badge">PLANNED / NETWORK INVITATIONS</span></article><article><h3>Open to the Internet</h3><p>Public hosting needs verified game/query listeners, host authentication, explicit ingress, resource limits and reconnect tests. Publishing a listing does not automatically make a host reachable.</p><span class="badge">PLANNED / PUBLIC HOSTING</span></article></div><h3>What already exists</h3><p>The independent community API implements scoped credentials, per-server earned XP and leaderboards, pending clan applications, administrator approve/reject/suspend decisions and a configurable name blacklist. Username/password login, remote Steam-ticket verification and network federation are not implemented yet.</p><div class="architecture" aria-label="Planned connection architecture"><div>PLAYER<br/><small>Launcher + local adapter</small></div><span aria-hidden="true">→</span><div>HOST AUTHORITY<br/><small>Identity, admission, policy</small></div><span aria-hidden="true">→</span><div>GAME SERVER<br/><small>Match + server-scoped XP</small></div></div><p class="caption">Target architecture. An optional directory discovers servers; it does not own the game session.</p></section>
-<section id="research"><p class="eyebrow">03 / RESEARCH NOTES</p><h2>Evidence before conclusions.</h2><p>The installed Unity/IL2CPP build contains native machine code. A decompiler can help explain it, but that output is not the original source and does not automatically compile into a matching game.</p><ol class="research-flow"><li><b>Pin the input.</b> Hash artifacts and state exactly which build and byte regions are measured.</li><li><b>Follow a question.</b> Use REA’s session and function tools, saved metadata and references to trace one behavior and its state changes.</li><li><b>Reconstruct source.</b> Write typed source for a bounded function, recording its dependencies, ABI, compiler, linker and layout.</li><li><b>Compare and exercise.</b> Compile fresh code, compare its bytes with the pinned extent, then run finite behavioral probes. Keep helper code out of the matching total.</li><li><b>Record the gap.</b> Keep unexplained code, data, assets, indirect calls and runtime uncertainty visible. Never replace unknowns with a completion claim.</li></ol><h3>Concrete findings</h3><div class="findings"><article><b>Native rank costs</b><p>TeamManager.GetXP at RVA 0x133a6d0 supplies rank thresholds. The original save stores prestige, rank, remaining EXP and total score independently. Total XP cannot recover arbitrary original prestige/history.</p><code>tools/runtime/agents/community_progression.js</code><span class="badge">NATIVE MENU RESTORE VERIFIED / SERVER PROFILE PARTIAL</span></article><article><b>Verified ping reset</b><p>PlayerNetwork.ClearPing at RVA 0xb29420 has a complete 63-byte reconstruction and 366 tested caller configurations. Its external write-barrier dependency receives no matching credit.</p><code>tools/reconstruction/ping_reset.c</code><span class="badge">EXACT FUNCTION MATCH / FINITE PROBES</span></article><article><b>Real XP delivery</b><p>Twenty-six native human awards totaling 18,000 XP reconciled with durable delivery and the community leaderboard. The award reasons were not captured, so the evidence does not identify a particular shot or kill.</p><code>tools/gameplay_xp_delivery.py</code><span class="badge">LAB RUNTIME OBSERVATION</span></article><article><b>Complete Pint counter bodies</b><p>All six declared methods of this small counter type now rebuild exactly: 191 bytes, including a 155-byte formatter caller. Reset folds Additional into Base, then clears Additional. Five new bodies passed 170,628 finite calls. The formatter's seven test helper bodies and nine globals are explicitly bound; external boxing, String.Format, metadata initialization and managed objects earn zero credit.</p><code>tools/reconstruction/pint_arithmetic.c</code><br><code>tools/reconstruction/pint_format.c</code><span class="badge">EXACT METHOD BODIES / EXTERNAL HELPERS REMAIN</span></article></div><h3 id="pint-source">Inspect the reconstructed source</h3><p>These are the actual project C files used by the proofs. The formatter calls external runtime helpers; expanding a source panel does not imply those helpers or the game have been rebuilt. The third file includes the previously matched Pint value getter and two other progression leaves.</p><!-- reconstructed-source:start --><details class="code-sample" id="pint-source-0"><summary>tools/reconstruction/pint_arithmetic.c</summary><pre tabindex="0"><code data-source="tools/reconstruction/pint_arithmetic.c">/* Unboxed PlayerStats.Pint operations from the pinned Win64 build.
+<section id="research"><p class="eyebrow">03 / RESEARCH NOTES</p><h2>Evidence before conclusions.</h2><p>The installed Unity/IL2CPP build contains native machine code. A decompiler can help explain it, but that output is not the original source and does not automatically compile into a matching game.</p><ol class="research-flow"><li><b>Pin the input.</b> Hash artifacts and state exactly which build and byte regions are measured.</li><li><b>Follow a question.</b> Use REA’s session and function tools, saved metadata and references to trace one behavior and its state changes.</li><li><b>Reconstruct source.</b> Write typed source for a bounded function, recording its dependencies, ABI, compiler, linker and layout.</li><li><b>Compare and exercise.</b> Compile fresh code, compare its bytes with the pinned extent, then run finite behavioral probes. Keep helper code out of the matching total.</li><li><b>Record the gap.</b> Keep unexplained code, data, assets, indirect calls and runtime uncertainty visible. Never replace unknowns with a completion claim.</li></ol><h3>Concrete findings</h3><div class="findings"><article><b>Native rank costs</b><p>TeamManager.GetXP at RVA 0x133a6d0 supplies rank thresholds. The original save stores prestige, rank, remaining EXP and total score independently. Total XP cannot recover arbitrary original prestige/history.</p><code>tools/runtime/agents/community_progression.js</code><span class="badge">NATIVE MENU RESTORE VERIFIED / SERVER PROFILE PARTIAL</span></article><article><b>Verified ping reset</b><p>PlayerNetwork.ClearPing at RVA 0xb29420 has a complete 63-byte reconstruction and 366 tested caller configurations. Its external write-barrier dependency receives no matching credit.</p><code>tools/reconstruction/ping_reset.c</code><span class="badge">EXACT FUNCTION MATCH / FINITE PROBES</span></article><article><b>Real XP delivery</b><p>Twenty-six native human awards totaling 18,000 XP reconciled with durable delivery and the community leaderboard. The award reasons were not captured, so the evidence does not identify a particular shot or kill.</p><code>tools/gameplay_xp_delivery.py</code><span class="badge">LAB RUNTIME OBSERVATION</span></article><article><b>Complete Pint counter bodies</b><p>All six declared methods of this small counter type now rebuild exactly: 191 bytes, including a 155-byte formatter caller. Reset folds Additional into Base, then clears Additional. Five new bodies passed 170,628 finite calls. The formatter's seven test helper bodies and nine globals are explicitly bound; external boxing, String.Format, metadata initialization and managed objects earn zero credit.</p><code>tools/reconstruction/pint_arithmetic.c</code><br><code>tools/reconstruction/pint_format.c</code><span class="badge">EXACT METHOD BODIES / EXTERNAL HELPERS REMAIN</span></article></div><article class="note"><h3>Complete progression importer</h3><p>The 1,122-byte native caller at RVA 0x24122b0 copies 42 API integers into 22 two-part counters and 20 plain integers. It preserves Steam identity and two native-only counters. Its proof passed 48,648 configurations, including 144 isolated failure probes that check completed partial writes. This explains the native layout; saved-profile loading during server admission still needs an integration patch and live test.</p><code>tools/reconstruction/community_progress_import.c</code><p class="caption">EXACT CALLER MATCH · EXTERNAL HELPERS RECEIVE ZERO NEW CREDIT</p></article><h3 id="pint-source">Inspect the reconstructed source</h3><p>These are the actual project C files used by the proofs. The formatter calls external runtime helpers; expanding a source panel does not imply those helpers or the game have been rebuilt. The third file includes the previously matched Pint value getter and two other progression leaves. The fourth file contains the complete 42-field progression importer.</p><!-- reconstructed-source:start --><details class="code-sample" id="pint-source-0"><summary>tools/reconstruction/pint_arithmetic.c</summary><pre tabindex="0"><code data-source="tools/reconstruction/pint_arithmetic.c">/* Unboxed PlayerStats.Pint operations from the pinned Win64 build.
  * The eight-byte aggregate is passed/returned in an integer register.
  * This is the complete two-field value layout, without a managed object header.
  * A signed increment contributes its raw modulo-2^32 bit pattern.
@@ -127,6 +127,111 @@ __declspec(noinline) uint32 pint_value(const struct Pint *value, void *method_in
 {
     (void)method_info;
     return value-&gt;additional + value-&gt;base;
+}
+</code></pre></details><details class="code-sample" id="pint-source-3"><summary>tools/reconstruction/community_progress_import.c</summary><pre tabindex="0"><code data-source="tools/reconstruction/community_progress_import.c">/* Complete PlayerStats.PlayerProgess.AppendCommunityStats caller.
+ * Native and API objects have different layouts. API progression has 42 uint32
+ * fields. Native progression stores 22 of them as eight-byte Pint values.
+ * SteamID, AmmoSupplied and WeeklyChallengeCompleted are not imported.
+ * Conversion and null-exception helpers remain explicit dependencies.
+ */
+typedef unsigned char uint8;
+typedef unsigned int uint32;
+typedef unsigned __int64 uint64;
+struct Pint { uint32 base, additional; };
+struct ApiProgress {
+    uint8 managed_header[0x10];
+    uint32 KillCount, LeaderKills, AssaultKills, MedicKills, EngineerKills;
+    uint32 SupportKills, ReconKills, DeathCount, WinCount, LoseCount;
+    uint32 FriendlyShots, FriendlyKills, Revived, RevivedTeamMates, Assists;
+    uint32 Prestige, Rank, EXP, ShotsFired, ShotsHit, Headshots;
+    uint32 ObjectivesComplated, HealedHPs, RoadKills, Suicides;
+    uint32 VehiclesDestroyed, VehicleHPRepaired, LongestKill, PlayTimeSeconds;
+    uint32 LeaderPlayTime, AssaultPlayTime, MedicPlayTime, EngineerPlayTime;
+    uint32 SupportPlayTime, ReconPlayTime, LeaderScore, AssaultScore, MedicScore;
+    uint32 EngineerScore, SupportScore, ReconScore, TotalScore;
+};
+struct ApiStats {
+    uint8 unmodeled_0[0x20];
+    struct ApiProgress *progress;
+};
+struct PlayerProgress {
+    uint8 managed_header[0x10];
+    uint64 SteamID;
+    struct Pint KillCount, LeaderKills, AssaultKills, MedicKills, EngineerKills;
+    struct Pint SupportKills, ReconKills, DeathCount;
+    uint32 WinCount, LoseCount;
+    struct Pint FriendlyShots, FriendlyKills, Revived, RevivedTeamMates, Assists;
+    uint32 Prestige, Rank, EXP;
+    struct Pint ShotsFired, ShotsHit, Headshots, ObjectivesComplated, HealedHPs;
+    struct Pint RoadKills, Suicides, VehiclesDestroyed, VehicleHPRepaired;
+    uint32 LongestKill, PlayTimeSeconds, LeaderPlayTime, AssaultPlayTime;
+    uint32 MedicPlayTime, EngineerPlayTime, SupportPlayTime, ReconPlayTime;
+    uint32 LeaderScore, AssaultScore, MedicScore, EngineerScore, SupportScore;
+    uint32 ReconScore, TotalScore, AmmoSupplied, WeeklyChallengeCompleted;
+};
+struct Pint make_pint(uint32 value, void *method_info);
+__declspec(noreturn) void raise_null_reference(void);
+
+/* Reload after every preceding store/call, including consecutive raw stores.
+ * The source wrapper can alias destination storage, and a conversion helper
+ * can replace its progress link. No restrict/nonnull assumptions are made.
+ */
+#define COPY_PINT(name) if (!(source=stats-&gt;progress)) goto missing; \
+    owner-&gt;name=make_pint(source-&gt;name,0)
+#define COPY_UINT(name) if (!(source=stats-&gt;progress)) goto missing; \
+    owner-&gt;name=source-&gt;name
+
+__declspec(noinline) void import_community_progress(struct PlayerProgress *owner,
+    struct ApiStats *stats, void *method_info)
+{
+    struct ApiProgress *source;
+    (void)method_info;
+    if (!stats) goto missing;
+    COPY_PINT(KillCount);
+    COPY_PINT(LeaderKills);
+    COPY_PINT(AssaultKills);
+    COPY_PINT(MedicKills);
+    COPY_PINT(EngineerKills);
+    COPY_PINT(SupportKills);
+    COPY_PINT(ReconKills);
+    COPY_PINT(DeathCount);
+    COPY_UINT(WinCount);
+    COPY_UINT(LoseCount);
+    COPY_PINT(FriendlyShots);
+    COPY_PINT(FriendlyKills);
+    COPY_PINT(Revived);
+    COPY_PINT(RevivedTeamMates);
+    COPY_PINT(Assists);
+    COPY_UINT(Prestige);
+    COPY_UINT(Rank);
+    COPY_UINT(EXP);
+    COPY_PINT(ShotsFired);
+    COPY_PINT(ShotsHit);
+    COPY_PINT(Headshots);
+    COPY_PINT(ObjectivesComplated);
+    COPY_PINT(HealedHPs);
+    COPY_PINT(RoadKills);
+    COPY_PINT(Suicides);
+    COPY_PINT(VehiclesDestroyed);
+    COPY_PINT(VehicleHPRepaired);
+    COPY_UINT(LongestKill);
+    COPY_UINT(PlayTimeSeconds);
+    COPY_UINT(LeaderPlayTime);
+    COPY_UINT(AssaultPlayTime);
+    COPY_UINT(MedicPlayTime);
+    COPY_UINT(EngineerPlayTime);
+    COPY_UINT(SupportPlayTime);
+    COPY_UINT(ReconPlayTime);
+    COPY_UINT(LeaderScore);
+    COPY_UINT(AssaultScore);
+    COPY_UINT(MedicScore);
+    COPY_UINT(EngineerScore);
+    COPY_UINT(SupportScore);
+    COPY_UINT(ReconScore);
+    COPY_UINT(TotalScore);
+    return;
+missing:
+    raise_null_reference();
 }
 </code></pre></details><!-- reconstructed-source:end --><p>The public site shares the method, measured function inventory and code locations. Shipped binaries, assets, raw captures, account identifiers and private configuration are excluded.</p></section>
 <section id="rebuild"><div class="section-head"><div><p class="eyebrow">04 / REBUILD TRACKER</p><h2>Matching source, measured in bytes.</h2></div><span class="badge">NON-LIVE DATA · DATED VERIFIED CHECKPOINT</span></div><div id="graph-status" role="status">Loading the published reconstruction snapshot…</div><div id="metrics" class="metrics" hidden></div><div class="scope-bar"><canvas id="scope" aria-label="Exact matched bytes in the native executable scope"></canvas></div><p class="caption">The entire width represents the declared native executable-byte scope. The matched portion is smaller than one pixel at normal screen sizes; the marker identifies its location without enlarging its area.</p><h3>Explore the matched functions</h3><p>This enlarged treemap shows <b>only the matched subset</b>. Rectangle area represents bytes within that subset, not overall game completion. Hover, focus or select a rectangle for its source binding.</p><div class="treemap"><canvas id="functions" aria-label="Byte weighted treemap of the verified matching function subset"></canvas></div><output id="selection" class="selection">Select a function to inspect its source location.</output><div class="table-tools"><label for="filter">Find a function or source file</label><input id="filter" type="search" placeholder="e.g. ClearPing or ping_reset.c"></div><div class="table-wrap"><table><thead><tr><th>Function</th><th>Original RVA</th><th>Matched bytes</th><th>Project source</th></tr></thead><tbody id="function-rows"></tbody></table></div><p class="caption">Separate static-data proof: 8 rows / 128 bytes. It is not added to executable matching. Zero complete shipped binaries have been rebuilt. Assets and full file layout are not represented by this function graph.</p></section>
