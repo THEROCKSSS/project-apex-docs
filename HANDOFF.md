@@ -24,3 +24,7 @@ allowlisted graph, compare exact source bindings, scan all six public files,
 then verify the deployed HTTPS assets and desktop/tablet/mobile interactions.
 The prior live site passed those browser checks; updated deployment/browser
 verification follows this commit and must be reported separately.
+
+Follow-up: corrected the findings heading after adding the fourth article. The
+previous deployment passed actual Chrome desktop/tablet/mobile, exact167row
+snapshot, keyboard/filter/reload, Trusted Types and private-path404 checks.
