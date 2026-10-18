@@ -1,27 +1,29 @@
 # Project Apex public research guide
 
-Updated18October2026. Six allowlisted website files contain research findings,
-179 measured matching functions, nine actual reconstructed C source samples and
-contribution guidance. NON-LIVE DATA. Matching is7161of55306761executable bytes
-(0.012947784%), with zero complete shipped binaries rebuilt.
+Updated18October2026. This six-file allowlisted website documents game research,
+measured matching coverage and contribution guidance. NON-LIVE DATA. The fresh
+ledger passes180functions/7468of55306761executable bytes(0.013502870%). Zero
+complete shipped binaries are rebuilt. Ten expandable C panels contain the
+actual project reconstruction sources; the private decompiler graph retains its
+older timestamp and is not published here.
 
-The latest leaf reconstructs15bytes of raw uint32-to-float32 transport, setting
-bit22. The special caller's compatible uint32 declaration preserves its365B.
-The optional authored-special XP fixture connects four authored bodies/553B,
-SDKpowf3782B/4872RO and an owned5Bname. It excludes prebuiltpow_special.obj and
-checks its alias without duplicate credit.5088curve calls compare all201retained
-costs;2398364direct special/default calls+6572calibrations pass. Complete code,
-readonlydata and IAT are checked before/after calls;FP restores and DLL absence
-is verified. Error handling remains a terminating marker; initialization spies
-and prebuilt math remain explicit dependencies. Integration adds zero credit.
+The latest307B float-error caller matches its whole body, nine code/data fixups
+and complete GS unwind metadata. Its owned standalone fixture checks64worked
+configurations+6572raw-result calls+one terminating cookie marker=6637caller
+values, plus19716separate bridge calibrations. Full code, owned dependencies,
+imports and exception metadata bind before/after calls; floating control restores
+and the DLL is absent after release. Real CRT/security helpers remain spies;
+full FP rounding/NaN/exception/unwind semantics are unproven. It has not yet been
+composed into the earlier XP fixture. Integration adds no duplicate credit.
 
-Source-only review found and fixed empty-domain acceptance; two regressions
-failed before fixing.37targetedtests/1303Python/oneexistingwarning/68Node,
-protocol27rejects and47Python/31JSsyntax pass. Fresh full-ledger verification
-completed2026-10-18T16:12:17.541770Z. Actual deployed browser/readback follows.
+Review found two proof-boundary gaps: incomplete-domain acceptance and replay
+of retained rather than fresh caller metadata. Both are fixed.145targeted tests,
+1319Python/oneexistingwarning,68Node,protocol27rejects and48Python/31JS parse
+checks passed. Deliberate fresh unwind corruption rejects with code unchanged.
+Deployed browser and publication readback follow at this exact new commit.
+
 Game binaries/assets, credentials, private hosts and raw captures are excluded.
-
-The expanded full goal remains ACTIVE: universal EXE setup/game provisioning,
-independent network invitations/accounts/public ingress, native admission and
-reconnect, full server functions, manual helicopter acceptance and custom content
-remain separate unfinished work. Retain the complete denominator and limitations.
+The full objective remains ACTIVE: complete binary/data/layout reconstruction,
+universal game provisioning, independent network accounts/public ingress,
+native saved-profile admission, manual flight/landing and custom content remain
+unfinished. Current gameplay observations are historical, not retested here.
