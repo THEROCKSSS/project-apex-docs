@@ -40,3 +40,7 @@ The complete goal remains ACTIVE. Universal game provisioning, independent
 accounts/public hosting, native saved-profile admission, manual flight/landing
 and custom content remain unfinished. Gameplay observations are historical;
 this checkpoint did not retest or change the game/server/services.
+
+The final screenshot check caught the new status finding in the contributor
+section. It now belongs to the research grid; the browser verifier asserts
+that exact placement. Deployed readback is required at the correction commit.
